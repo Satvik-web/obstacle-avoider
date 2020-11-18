@@ -20,7 +20,6 @@ for (let index_22 = 0; index_22 <= 4; index_22++) {
 basic.forever(function () {
     while (Obstacle.length > 0 && Obstacle[0].get(LedSpriteProperty.X) == 0) {
         Obstacle.removeAt(0).delete()
-        game.addScore(0.25)
     }
     for (let Obstacle_1 of Obstacle) {
         Obstacle_1.change(LedSpriteProperty.X, -1)
