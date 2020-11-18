@@ -25,7 +25,7 @@ basic.forever(function () {
     for (let Obstacle_1 of Obstacle) {
         Obstacle_1.change(LedSpriteProperty.X, -1)
     }
-    if (Tick % 1 == 0) {
+    if (Tick % 3 == 0) {
         Empty_Obstacle_Y = randint(0, 4)
         for (let index_22 = 0; index_22 <= 4; index_22++) {
             if (index_22 != Empty_Obstacle_Y) {
